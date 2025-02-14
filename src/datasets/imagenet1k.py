@@ -57,7 +57,7 @@ def make_imagenet1k(
         drop_last=drop_last,
         pin_memory=pin_mem,
         num_workers=num_workers,
-        persistent_workers=False)
+        persistent_workers=True)
     logger.info('ImageNet unsupervised data loader created')
 
     return dataset, data_loader, dist_sampler
