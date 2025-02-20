@@ -143,7 +143,7 @@ def main(args, resume_preempt=False):
         wandb.init(
             project="I-JEPA-RUNS",
             entity='msc-thesis-proj',
-            name='vits16.224-bs.2048-ep.300',
+            name=tag,
             config=args  # Logs all params from your config dict
         )
 
