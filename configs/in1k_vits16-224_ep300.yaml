@@ -8,7 +8,7 @@ data:
   image_folder: ""
   num_workers: 10
   pin_mem: true
-  root_path: /ix/cs2770_2025s/dtk28/datasets/ImageNet/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/
+  root_path: ./datasets/ImageNet/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/
   #root_path: ./datasets/ImageNet/
   use_color_distortion: false
   use_gaussian_blur: false
