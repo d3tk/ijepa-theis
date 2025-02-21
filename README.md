@@ -1,5 +1,17 @@
 # I-JEPA
 
+## crc workflow
+
+`srun -n1 -t02:00:00 --qos=normal --gres=gpu:2 --cluster=gpu --partition=l40s --pty bash`
+two gpus requested on l40s which has 40gb 
+
+load python with `module load python/ondemand-jupyter-python3.11`
+
+run training for the vit-s:
+
+`python main.py --fname configs/in1k_vits16-224_ep300.yaml --devices cuda:0 cuda:1`
+
+
 Official PyTorch codebase for I-JEPA (the **Image-based Joint-Embedding Predictive Architecture**) published @ CVPR-23.
 [\[arXiv\]](https://arxiv.org/pdf/2301.08243.pdf) [\[JEPAs\]](https://ai.facebook.com/blog/yann-lecun-advances-in-ai-research/) [\[blogpost\]](https://ai.facebook.com/blog/yann-lecun-ai-model-i-jepa/)
 
